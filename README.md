@@ -11,11 +11,11 @@ This also makes it possible to harmonize the way Django renders data on the serv
 
 - Install ``django_jqueryglobalize`` by putting the ``django_jqueryglobalize`` inside your django application
 - Add the javascript_catalog extension to the urls:
-
+```python
     (r'^globalize/', 'django_globalize.views.javascript_catalog'),
-
+```
 - Be sure to include the resources in your html:
-    
+```html
     <script src="{{STATIC_URL}}js/globalize.js" type="text/javascript"></script>
     <script src="/jsi18n_ext" type="text/javascript"></script>
-
+```
